@@ -5,11 +5,13 @@ public class User {
     private int id;
     private String username;
     private String password;
+    private int age;
 
     // 构造函数
-    public User(int id, String username, String password) {
+    public User(int id, String username, String password, int age) {
         this.id = id;
         this.username = username;
+        this.age = age;
         setpassword(password);
     }
 
@@ -21,6 +23,14 @@ public class User {
 
     public String getUsername() {
         return username;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age){
+        this.age=age;
     }
 
     private void setpassword(String password) {
